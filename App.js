@@ -88,7 +88,7 @@ const promptProject = portfolioData => {
         } else {
             return portfolioData;
         }
-    });
+    }); 
 };
 
 
