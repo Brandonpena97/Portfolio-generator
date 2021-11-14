@@ -1,3 +1,4 @@
+
 const inquirer = require('inquirer');
 const Choices = require('inquirer/lib/objects/choices');
 //const fs = require('fs');
@@ -13,7 +14,7 @@ const Choices = require('inquirer/lib/objects/choices');
 // });
 
 
-const promptUser = portfolioData => {
+function promptUser(portfolioData) { 
     return inquirer.prompt([
         {
             type: 'input',
@@ -31,7 +32,7 @@ const promptUser = portfolioData => {
             message: 'Provide some information about yourself:'
         }
     ]);
-};
+}
 
 const promptProject = portfolioData => {
     console.log(
@@ -97,3 +98,5 @@ promptUser()
     .then(portfolioData => {
         console.log(portfolioData);
     });
+
+
