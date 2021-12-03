@@ -1,6 +1,5 @@
 
 const inquirer = require('inquirer');
-const Choices = require('inquirer/lib/objects/choices');
 const fs = require('fs');
 const generatePage = require('./src/page-template');
 
