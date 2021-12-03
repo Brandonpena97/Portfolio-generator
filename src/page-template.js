@@ -49,7 +49,7 @@ const generateProjects = projectsArr => {
           </div>
         `;
         })
-        .join('')}
+        .join('')} 
       </div>
     </section>
   `;
