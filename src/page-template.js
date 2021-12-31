@@ -53,7 +53,7 @@ const generateProjects = projectsArr => {
       </div>
     </section>
   `;
-};
+}; 
 
 
 

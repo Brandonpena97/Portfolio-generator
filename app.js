@@ -19,7 +19,7 @@ const promptUser = () => {
                     return true;
                 } else {
                     console.log('Please enter your Github Username!');
-                    return false;
+                    return false; 
                 }
             }
 
