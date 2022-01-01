@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 const fs = require('fs');
 const generatePage = require('./src/page-template');
 
 
-=======
->>>>>>> 281920c4535c45802fb161644500dd32f63a68b7
 const inquirer = require('inquirer');
 const promptUser = () => {
     return inquirer.prompt([
@@ -22,11 +19,7 @@ const promptUser = () => {
                     return true;
                 } else {
                     console.log('Please enter your Github Username!');
-<<<<<<< HEAD
                     return false; 
-=======
-                    return false;
->>>>>>> 281920c4535c45802fb161644500dd32f63a68b7
                 }
             }
 
@@ -43,19 +36,11 @@ const promptUser = () => {
             message: 'Provide some information about yourself:',
             when: ({ confirmAbout }) => {
                 if (confirmAbout) {
-<<<<<<< HEAD
                     return true;
                 } else {
                     return false;
                 }
             }
-=======
-                  return true;
-                } else {
-                  return false;
-                }
-              }
->>>>>>> 281920c4535c45802fb161644500dd32f63a68b7
         }
     ]);
 };
@@ -145,7 +130,6 @@ const promptProject = portfolioData => {
 promptUser()
     .then(promptProject)
     .then(portfolioData => {
-<<<<<<< HEAD
         const pageHTML = generatePage(portfolioData);
 
         fs.writeFile('./index.html', pageHTML, err => {
@@ -156,25 +140,8 @@ promptUser()
     });
 
 
+ 
 
 
 
-
-=======
-        console.log(portfolioData);
-    });
-
-
-//const fs = require('fs');
-//const generatePage = require('./src/page-template');
-
-
-//const pageHTML = generatePage(name, github);
-
-//fs.writeFile('./index.html', pageHTML, err => {
-    //if (err) throw err;
-
-   // console.log('Portfolio complete! Check out index.html to see the output!');
-//});
->>>>>>> 281920c4535c45802fb161644500dd32f63a68b7
 
